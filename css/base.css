@@ -17,16 +17,11 @@ body{
 a, span{
     display: inline-block;
     color: unset;
-}
-
-a{
-    padding: 0.2rem .5rem;
-    border-radius: 20px;
     transition: 500ms;
 }
 
-a:hover{
-    background-color: var(--amarelo-claro);
+img{
+    width: 100%;
 }
 
 
@@ -36,6 +31,15 @@ a:hover{
     height: 20vh;
     background-color: var(--azul-claro);
     overflow: hidden;
+}
+
+.cabecalho a{
+    padding: 0.2rem .5rem;
+    border-radius: 20px;
+}
+
+.cabecalho a:hover{
+    background-color: var(--amarelo-claro);
 }
 
 .cabecalho__topo{
@@ -85,11 +89,15 @@ a:hover{
 
 /* ------------------Principal---------------------- */
 
-.principal__titulo{
+.principal{
+    margin: .5rem 0 1rem 0;
+}
+
+.principal__conteudo{
     text-align: center;
 }
 
-.principal__titulo span{
+.principal__conteudo span{
     font-weight: bolder;
     padding: 0 1rem;
     background-color: white;
@@ -98,7 +106,58 @@ a:hover{
     bottom: -10px;
 }
 
-.principal__titulo hr{
+.principal__conteudo hr{
     border: 2px solid var(--laranja);
     border-radius: 50px;
+}
+
+.principal__banners{
+    margin: 1rem 0;
+    display: flex;
+    gap: .5rem;
+    overflow: hidden;
+}
+
+.principal__banners>img{
+    width: 70%;
+}
+
+.principal__banners>div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: .5rem;
+}
+
+/* ------------------Rodape---------------------- */
+
+.rodape{
+    background-color: var(--amarelo-claro);
+    padding: 1rem 0;
+}
+
+.rodape__dados{
+    display: flex;
+    gap: 2rem;
+}
+
+.rodape__dados span{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: .2rem 0;
+}
+
+.rodape__dados ul{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.rodape__dados__cardapio a:hover, .rodape__dados__conta a:hover, .rodape__dados__atendimento a:hover{
+    text-decoration: underline;
+} 
+
+.rodape__dados__redes{
+    display: flex;
+    gap: 1rem;
 }
