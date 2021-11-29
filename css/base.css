@@ -2,6 +2,8 @@
     --azul-claro: #A2D2FF;
     --amarelo-claro: #FEF9EF;
     --laranja: #FF865E;
+    --amarelo:#fee5405e;
+    --cinza-claro: #a3a3a3dc;
 
     --opens: 'Open Sans', sans-serif;
 }
@@ -33,12 +35,12 @@ img{
     overflow: hidden;
 }
 
-.cabecalho a{
+.cabecalho__menu__lista__item a{
     padding: 0.2rem .5rem;
     border-radius: 20px;
 }
 
-.cabecalho a:hover{
+.cabecalho__menu__lista__item a:hover{
     background-color: var(--amarelo-claro);
 }
 
@@ -106,7 +108,7 @@ img{
     bottom: -10px;
 }
 
-.principal__conteudo hr{
+.principal__conteudo hr, .principal__login hr{
     border: 2px solid var(--laranja);
     border-radius: 50px;
 }
@@ -141,6 +143,7 @@ img{
     gap: 2rem;
 }
 
+
 .rodape__dados span{
     font-weight: bold;
     font-size: 1.2rem;
@@ -160,4 +163,154 @@ img{
 .rodape__dados__redes{
     display: flex;
     gap: 1rem;
+}
+
+/* ------------------Loja Proxima---------------------- */
+
+.principal__mapa>span, .principal__subtitulo{
+    margin: .5rem 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.principal__mapa>span{
+    font-size: 2rem;
+}
+
+.principal__subtitulo{
+    background-color: var(--laranja);
+    padding: .5rem;
+}
+
+/* ------------------Reserva---------------------- */
+ 
+.principal__reserva>span, .principal__acompanhar>h1 span, .principal__cardapio>h1 span{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.principal__reserva__conteudo{
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.principal__reserva__conteudo__botao{
+    padding: 2rem;
+    border-radius: 50px;
+    background-color: var(--laranja);
+    margin: 1rem 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.principal__reserva__conteudo__texto{
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* ------------------Acompanhar---------------------- */
+
+.principal__acompanhar>h1, .principal__cardapio>h1{
+    text-align: center;
+}
+
+.principal__acompanhar__campo{
+    margin: 1rem 0;
+    background-color: var(--amarelo-claro);
+    padding: 1rem;
+    height: 20rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.principal__acompanhar__campo form>*{
+    border-radius: 50px;
+    border:1px solid #000;
+    padding: .2rem .4rem;
+    margin: 1rem 0;
+}
+
+.principal__acompanhar__campo form>button{
+    background-color: var(--amarelo);       
+}
+
+.principal__acompanhar__campo form>button:hover{
+    cursor: pointer;
+}
+
+.principal__acompanhar__campo form>input{
+    width: 40%;
+}
+
+/* ------------------Cardapio---------------------- */
+
+.principal__cardapio__campo{
+    background-color: var(--amarelo-claro);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.principal__cardapio__campo__item{
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 2rem;
+    transition: 500ms;
+    display: block;
+}
+
+.principal__cardapio__campo__item:hover{
+    background-color: var(--amarelo);
+}
+
+.principal__cardapio__campo__item a{
+    width: 100%;
+}
+
+/* ------------------Login---------------------- */
+
+.principal__login__campo, .cadastro {
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.principal__login__campo label{
+    display: inline-block;
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin: .25rem 0;
+}
+
+.principal__login__campo input, .logar{
+    border: 1px solid var(--cinza-claro);
+    border-radius: 5px;
+    padding: .7rem 1rem;
+    width: 100%;
+}
+
+.logar{
+    background-color: var(--amarelo-claro);
+    transition: 500ms;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.logar:hover{
+    cursor: pointer;
+    background-color: var(--amarelo);
+}
+
+.principal__login__campo a {
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.cadastro p {
+	text-align: center;
+	margin: 1rem 0;
+}
+
+.cadastro a{
+    text-decoration: underline;
 }
