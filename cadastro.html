@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
-    <title>Lion Pizzaria - Login</title>
+    <title>Lion Pizzaria - Cadastro</title>
 </head>
 <body>
 
@@ -45,35 +45,27 @@
     </header>
     
     <main class="principal">
-       <section class=" principal__login container">
-            <h1><span>Login</span></h1>
+       <section class=" principal__cadastro container">
+            <h1><span>Cadastro</span></h1>
             <hr>
             
-            <form class="principal__login__campo">
+            <form class="principal__cadastro__campo">
                 <label for="usuario">
-                    Usuario:
+                    Nome Completo:
                 </label>
                 <input type="text" name="usuario">
                 <br>
-                <label for="senha">
-                    Senha:
+                <label for="genero">
+                    Gênero:
                 </label>
-                <input type="text" name="senha">
+                <input type="radio" name="genero">
                 <a href="#">Esqueceu?</a>
                 <br>
                 <div>
                     <button class="logar">Continuar</button>
                 </div>
             </form>
-            <div class="principal__login__cadastro">
-                <p>
-                    Não tem cadastro?
-                    <a href="#">Cadastre-se</a>
-                </p>
-                <p>
-                    Ao continuar com o acesso, você concorda com a nossa <a href="#">Política de Privacidade</a>
-                </p>
-            </div>
+            
 
        </section>
     </main>

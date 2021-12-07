@@ -306,11 +306,15 @@ img{
 	text-decoration: underline;
 }
 
-.cadastro p {
+.principal__login__cadastro p {
 	text-align: center;
 	margin: 1rem 0;
 }
 
-.cadastro a{
+.principal__login__cadastro a{
     text-decoration: underline;
 }
+
+/* ------------------Cadastro---------------------- */
+
+
