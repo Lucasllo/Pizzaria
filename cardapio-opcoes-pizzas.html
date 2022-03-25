@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
-    <title>Lion Pizzaria - Reserva</title>
+    <title>Lion Pizzaria - Cardapio</title>
 </head>
+
 <body>
 
     <header class="cabecalho">
         <div class="cabecalho__topo container">
-            <a href="./index.html">
+            <a href="#">
                 <h1>
                     <img class="cabecalho__topo__logo" src="./img/logo.png" alt="">
                     <img class="cabecalho__topo__logo-texto" src="./img/texto-logo.png" alt="">
@@ -45,24 +49,58 @@
             </nav>
         </div>
     </header>
-    
-    <main class="principal">
-       <section class=" principal__reserva container">
-            <span>Reservas</span>
 
-            <div class="principal__reserva__conteudo">
-                <a href="#" class="principal__reserva__conteudo__botao"><span>Clique e faça sua reserva</span></a>
-                <div class="principal__reserva__conteudo__texto">
-                   <span>Aceitamos reservas todos os dias, porém com um número limitado de mesas.
-                    <br>
-                    <br>
-                    Para grupos maiores que os exibidos no site, por favor, entre em contato diretamente com a casa para checar a disponibilidade e fazer a reserva.
-                    <br>
-                    <br>                 
-                    Clientes sem reserva também são sempre bem-vindos!</span>
-                </div>
+    <main class="principal">
+        <section class=" principal__cardapio container">
+            <h1><span>Cardapio</span></h1>
+
+            <div class="principal__cardapio__campo__pizzas">
+                <h2 href="" class="principal__cardapio__campo__pizzas__item">
+                    <span>Pizzas</span>
+                </h2>
+                <form action="" class="formulario__pizzas">
+                    <ul>
+                        <li href="" class="principal__cardapio__campo__pizzas__item">
+                            <span>Calabresa</span>
+                            <input type="text" maxlength="1" value="0"
+                                onkeypress="if(event.which < 48 || event.which > 57) return false">
+                        </li>
+                        <li href="" class="principal__cardapio__campo__pizzas__item">
+                            <span>Mussarela</span>
+                            <input type="text" maxlength="1" value="0"
+                                onkeypress="if(event.which < 48 || event.which > 57) return false">
+                        </li>
+                        <li href="" class="principal__cardapio__campo__pizzas__item">
+                            <span>Portuguesa</span>
+                            <input type="text" maxlength="1" value="0"
+                                onkeypress="if(event.which < 48 || event.which > 57) return false">
+                        </li>
+                        <li href="" class="principal__cardapio__campo__pizzas__item">
+                            <span>4 Queijos</span>
+                            <input type="text" maxlength="1" value="0"
+                                onkeypress="if(event.which < 48 || event.which > 57) return false">
+                        </li>
+                        <li href="" class="principal__cardapio__campo__pizzas__item">
+                            <span>Frango</span>
+                            <input type="text" maxlength="1" value="0"
+                                onkeypress="if(event.which < 48 || event.which > 57) return false">
+                        </li>
+                        <li href="" class="principal__cardapio__campo__pizzas__item">
+                            <span>Frango com Catupiry</span>
+                            <input type="text" maxlength="1" value="0"
+                                onkeypress="if(event.which < 48 || event.which > 57) return false">
+                        </li>
+                    </ul>
+                    <div class="submit">
+                        <input class="btsubmit" id="submit" type="submit" value="Comprar">
+                        <label class="addCarrinho" for="submit"><img src="./img/logo-carrinho.png" alt=""
+                                ]><span>Adicionar ao Carrinho</span></label>
+                    </div>
+
+                </form>
             </div>
-       </section>
+
+        </section>
     </main>
 
     <footer class="rodape">
@@ -105,4 +143,5 @@
 
     </footer>
 </body>
+
 </html>
