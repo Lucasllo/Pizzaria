@@ -443,4 +443,12 @@ img{
     .rodape__dados__redes {
         justify-content: space-around;
     }
+
+    .principal__cardapio__campo__pizzas__item{
+        font-size: 1.5rem;
+    } 
+
+    .addCarrinho {
+        width: auto;
+    }
 }
