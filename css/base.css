@@ -412,3 +412,27 @@ img{
 .addCarrinho:hover{
     cursor: pointer;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .cabecalho{
+        padding: 1rem;
+        height: in◘itial;
+    }
+
+    .cabecalho__menu__lista {
+        flex-direction: column;
+    }
+
+    .rodape{
+        padding: 1rem;
+    }
+
+    .rodape__dados {
+        flex-direction: column;
+    }
+
+    .rodape__dados__redes {
+        justify-content: space-around;
+    }
+}
